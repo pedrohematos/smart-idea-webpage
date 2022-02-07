@@ -8,7 +8,7 @@
     "build": "node-sass src/sass/main.scss dist/css/style.css -w",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://github.com/pedrohematos/smart-idea-webpage",
+  "homepage": "https://smartidea.me",
   "author": "Pedro Matos",
   "license": "ISC",
   "devDependencies": {
