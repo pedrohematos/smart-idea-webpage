@@ -1,0 +1,83 @@
+.section-contact {
+  width: 100vw;
+  padding: 10rem 0;
+  background-color: $color-blue-background;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    display: inline-block;
+    max-width: 40vw;
+    text-align: center;
+    //border: solid 1px blue;
+  }
+
+  div {
+    width: 80vw;
+    display: inline-block;
+    //border: solid 1px red;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+
+    form {
+      //border: solid 1px yellow;
+      margin: auto;
+      max-width: 35rem;
+
+      h2 {
+        font-weight: 500;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+      }
+
+      label {
+        font-weight: 400;
+        font-size: 1.1rem;
+      }
+
+      input {
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 3rem white inset !important;
+        }
+
+        &:not(:last-child) {
+          padding: 1rem;
+          margin: 1rem 0;
+          border: 0;
+          box-shadow: 0 0 1.5rem 0.4rem rgba($color-black, 0.06);
+          border-radius: 1rem;
+          width: 100%;
+
+          &:focus,
+          &:hover {
+            outline: 1px solid $color-light-gray;
+          }
+        }
+
+        //Submit button
+        &:last-child {
+          margin: 3rem 0;
+        }
+      }
+
+      textarea {
+        resize: none;
+        padding: 1rem;
+        margin: 1rem 0;
+        margin-bottom: 3rem;
+        border: 0;
+        box-shadow: 0 0 1.5rem 0.4rem rgba($color-black, 0.06);
+        border-radius: 1rem;
+        width: 100%;
+
+        &:focus,
+        &:hover {
+          outline: 1px solid $color-light-gray;
+        }
+      }
+    }
+  }
+}

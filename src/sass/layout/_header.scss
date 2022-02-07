@@ -1,0 +1,79 @@
+.header {
+  height: 100vh;
+  background-image: url(../img/hero.png);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+
+  &__container {
+    margin: 3rem auto;
+    width: 95vw;
+    height: 92vh;
+
+    //border: solid 1px red;
+
+    position: relative;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        height: 3.5rem;
+      }
+
+      div {
+        width: 32rem;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-top: 0.6rem;
+        padding: 0 1rem 1rem 1rem;
+
+        a {
+          text-decoration: none;
+          color: $color-white;
+
+          &:hover {
+            border-bottom: solid 0.2rem $color-white;
+          }
+
+          &:last-child {
+            text-align: center;
+            width: 11rem;
+            height: 2.7rem;
+            background-color: rgba($color-white, 0.2);
+            border-radius: 10rem;
+            transition: all 0.2s;
+
+            &:hover {
+              background-color: $color-white;
+              color: $color-blue-light;
+
+              transform: translateY(-0.1rem);
+              box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+            }
+
+            &:active {
+              background-color: $color-white;
+              color: $color-blue-light;
+
+              transform: translateY(-0.1rem);
+              box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+            }
+          }
+        }
+      }
+    }
+
+    &__text-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(0, -50%);
+      max-width: 40rem;
+    }
+  }
+}

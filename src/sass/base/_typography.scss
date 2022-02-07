@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray;
+}
+
+.heading-primary {
+  color: $color-white;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &-main {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 8rem;
+
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &-sub {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+.heading-secondary {
+  backface-visibility: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+
+  text-align: center;
+
+  &-main {
+    font-weight: 500;
+  }
+
+  &-sub {
+    font-weight: 300;
+  }
+}
+
+.main-paragraph {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.heading-logo {
+  &-smart {
+    font-weight: 600;
+    color: $color-blue;
+  }
+
+  &-idea {
+    font-weight: 200;
+    color: $color-blue;
+  }
+
+  &-sub {
+    font-weight: 400;
+  }
+}

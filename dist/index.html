@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Smart Idea</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__container">
+        <nav>
+          <img src="img/logo-white.png" alt="Logo" />
+          <div>
+            <a href="#header">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+          </div>
+        </nav>
+        <div class="header__container__text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary-main">O melhor da tecnologia</span>
+            <span class="heading-primary-sub"
+              >Ideias simples e inteligentes</span
+            >
+          </h1>
+          <a href="#contato" class="btn btn-white btn-animated"
+            >Entrar em contato</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about" id="sobre">
+        <h2 class="heading-secondary">
+          <span class="heading-secondary-main">smart</span>
+          <span class="heading-secondary-sub">idea</span>
+        </h2>
+        <p class="main-paragraph">
+          Somo movidos por inovação e resultados. Acreditamos no poder
+          transformador da tecnologia na vida das pessoas. Apoiamos nossos
+          parceiros na construção de soluções que geram benefícios, tendo como o
+          centro das soluções o mindset ágil.
+        </p>
+        <img
+          src="img/about-img.png"
+          alt="People working together at a office"
+        />
+      </section>
+
+      <section class="section-contact" id="contato">
+        <img src="img/contact-img.png" alt="Man at the office making a call" />
+        <div class="form-container">
+          <form
+            action="https://formsubmit.co/ac9a45bed0ddc756b63e4a963bb7d8da"
+            method="POST"
+          >
+            <h2>Fale conosco</h2>
+            <label for="name">Nome:*</label><br />
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="email">Email:*</label><br />
+            <input type="text" id="email" name="email" required /><br />
+
+            <label for="comment">Escreve aqui sua mensagem:</label><br />
+            <textarea id="comment" name="comment" rows="5"></textarea><br />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/#contato"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Smart Idea - Fale conosco"
+            />
+            <input type="text" name="_honey" style="display: none" />
+
+            <input type="submit" class="btn btn-transparent" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column footer-column-logo">
+          <h1 class="heading-logo">
+            <span class="heading-logo-smart">smart</span>
+            <span class="heading-logo-idea">idea</span><br />
+          </h1>
+          <h3 class="heading-logo-sub">O melhor da tecnologia</h3>
+        </div>
+
+        <div class="footer-column">
+          <h3>Companhia</h3>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <a href="mailto:info@smartidea.me">info@smartidea.me</a>
+          <a
+            target="_blank"
+            href="https://www.google.com/maps/place/Belo+Horizonte,+State+of+Minas+Gerais/@-19.9026615,-44.1041363,11z/data=!3m1!4b1!4m5!3m4!1s0xa690cacacf2c33:0x5b35795e3ad23997!8m2!3d-19.919052!4d-43.9386685"
+            >Belo Horizonte, MG</a
+          >
+        </div>
+      </div>
+
+      <h4>© Copyright SmartIdea Ltda.</h4>
+    </footer>
+  </body>
+</html>

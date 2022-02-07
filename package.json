@@ -1,0 +1,18 @@
+{
+  "name": "smart-idea-website",
+  "version": "1.0.0",
+  "description": "Landing page for Smart Idea",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass src/sass/main.scss dist/css/style.css -w",
+    "build": "node-sass src/sass/main.scss dist/css/style.css -w",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://github.com/pedrohematos/smart-idea-webpage",
+  "author": "Pedro Matos",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "node-sass": "^7.0.1"
+  }
+}
