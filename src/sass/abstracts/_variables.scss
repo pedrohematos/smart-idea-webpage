@@ -11,3 +11,21 @@ $color-black: #000;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+$breakpoints: (
+  "sm": (
+    min-width: 576px,
+  ),
+  "small": (
+    min-width: 767px,
+  ),
+  "medium": (
+    min-width: 800px,
+  ),
+  "large": (
+    min-width: 1024px,
+  ),
+  "xlg": (
+    min-width: 1025px,
+  ),
+) !default;

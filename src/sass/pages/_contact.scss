@@ -1,19 +1,15 @@
 .section-contact {
-  width: 100vw;
-  padding: 10rem 0;
+  // width: 100vw;
+  padding: 3rem 0;
   background-color: $color-blue-background;
-  display: flex;
-  justify-content: space-between;
+  display: block;
 
-  img {
-    display: inline-block;
-    max-width: 40vw;
-    text-align: center;
-    //border: solid 1px blue;
+  .thumb {
+    display: none;
   }
 
   div {
-    width: 80vw;
+    width: 100vw;
     display: inline-block;
     //border: solid 1px red;
     padding: 1rem;
@@ -78,6 +74,23 @@
           outline: 1px solid $color-light-gray;
         }
       }
+    }
+  }
+}
+@include respond-to("medium") {
+  .section-contact {
+    padding: 10rem 0;
+    background-color: $color-blue-background;
+    display: flex;
+    justify-content: space-between;
+    .thumb {
+      display: inline-block;
+      max-width: 40%;
+      text-align: center;
+      //border: solid 1px blue;
+    }
+    div {
+      width: 80%;
     }
   }
 }

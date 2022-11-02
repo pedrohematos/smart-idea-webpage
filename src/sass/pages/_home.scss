@@ -1,9 +1,8 @@
 .section-about {
-  width: 100vw;
   padding: 4rem 0;
 
   h2 {
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
   }
 
   p {
@@ -17,5 +16,13 @@
     margin: auto;
     width: 80vw;
     text-align: center;
+  }
+}
+
+@include respond-to("medium") {
+  .section-about {
+    h2 {
+      margin-bottom: 10rem;
+    }
   }
 }
