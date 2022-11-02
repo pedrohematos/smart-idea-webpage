@@ -17,17 +17,36 @@
 
     <title>Smart Idea</title>
   </head>
+
   <body>
     <header class="header" id="header">
       <div class="header__container">
-        <nav>
-          <img src="img/logo-white.png" alt="Logo" />
-          <div>
-            <a href="#header">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
+        <nav class="navbar">
+          <div class="navbar-container">
+            <a class="navbar-brand" href="/dist/index.html">
+              <img src="img/logo-white.png" alt="Logo" class="img-fluid" />
+            </a>
+
+            <input class="checkbox" type="checkbox" name="" id="checkbox" />
+
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+
+            <ul class="menu" id="menu">
+              <a class="navbar-brand" href="/dist/index.html">
+                <span class="heading-secondary-main">smart</span>
+                <span class="heading-secondary-sub">idea</span>
+              </a>
+              <li><a class="menu-item" href="#header">Início</a></li>
+              <li><a class="menu-item" href="#sobre">Sobre</a></li>
+              <li><a class="menu-item" href="#contato">Contato</a></li>
+            </ul>
           </div>
         </nav>
+
         <div class="header__container__text-box">
           <h1 class="heading-primary">
             <span class="heading-primary-main">O melhor da tecnologia</span>
@@ -57,11 +76,19 @@
         <img
           src="img/about-img.png"
           alt="People working together at a office"
+          class="img-fluid"
         />
       </section>
 
       <section class="section-contact" id="contato">
-        <img src="img/contact-img.png" alt="Man at the office making a call" />
+        <div class="thumb">
+          <img
+            src="img/contact-img.png"
+            alt="Man at the office making a call"
+            class="img-fluid"
+          />
+        </div>
+
         <div class="form-container">
           <form
             action="https://formsubmit.co/ac9a45bed0ddc756b63e4a963bb7d8da"
@@ -112,8 +139,8 @@
         </div>
 
         <div class="footer-column">
-          <h3>Contato</h3>
-          <a href="mailto:info@smartidea.me">info@smartidea.me</a>
+          <h3>Localidade</h3>
+          <!-- <a href="mailto:info@smartidea.me">info@smartidea.me</a> -->
           <a
             target="_blank"
             href="https://www.google.com/maps/place/Belo+Horizonte,+State+of+Minas+Gerais/@-19.9026615,-44.1041363,11z/data=!3m1!4b1!4m5!3m4!1s0xa690cacacf2c33:0x5b35795e3ad23997!8m2!3d-19.919052!4d-43.9386685"
@@ -125,4 +152,6 @@
       <h4>© Copyright SmartIdea Ltda.</h4>
     </footer>
   </body>
+
+  <script src="menu.js"></script>
 </html>
