@@ -154,4 +154,24 @@
   </body>
 
   <script src="menu.js"></script>
+
+  <script
+    src="https://unpkg.com/blip-chat-widget"
+    type="text/javascript"
+  ></script>
+  <script>
+    (function () {
+      window.onload = function () {
+        new BlipChat()
+          .withAppKey(
+            "c21hcnRpZGVhcm90ZWFkb3JwcmQ6ZGMzMTgxN2EtOWI2Ni00NjY3LWI4Y2UtNzgyZjNhZWZjMGYx"
+          )
+          .withButton({ color: "#0096fa", icon: "" })
+          .withCustomCommonUrl(
+            "https://ana-vitoria-drumond-mpkzv.chat.blip.ai/"
+          )
+          .build();
+      };
+    })();
+  </script>
 </html>
